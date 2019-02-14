@@ -17,7 +17,8 @@
 
 ### Project Overview
 
-This is the final proposal for 
+This is the final proposal for ...
+
 1.) Building the Team
 2.) Project Description
 3.) Utilized Machines and Installations
