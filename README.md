@@ -25,6 +25,7 @@ This is the final proposal for ...
 3. Choice of Methods and Strategies
 4. Bottlenecks
 5. Final Draft
+6. Directions for Use
 
 -------------
 
@@ -36,20 +37,23 @@ The tasks for the project were divided by nodes except for the classifier where 
 
 ### Project Description
 
-#### Model
+##### Model
 
 The project's code was structured using ROS packages wrapped in a Catkin workspace, written in Python and C++.
 The team members have the option to choose which environment to install on: Docker, AWS, VM and the Udacity Workspace were the preferred containers.
-Data was also shared via the FTP server. Work was done in phases as  
+Data was also shared via the FTP server. Work was done in phases as described in the _Timeline_ below.
 
-#### Classifier
+##### Classifier
 
 The team used [__Google's Tensorflow Object Detection API__](https://github.com/tensorflow/models/blob/master/research/object_detection) for its code framework and have tested on multiple models before arriving at their final choice: the [**Single Shot MultiBox Detector with the Inception Neural Network v2 trained on the Coco dataset 2018 01 28**](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
 
+##### Training
+
 Training was done on two separate annotated datasets taken online. The first dataset contains simulator images that was fed to the model to create the first inference graph for running the classifier in the simulator. The training took *2,970 steps*. The second dataset contains real-life images mixed with Carla ROS bag images for running on Carla and it took *3,900 steps*. 
 
-
 ### Stages of Project Construction
+
+##### Timeline
 
 To complete the tasks on time, the KITT team has followed a schedule as well as the [order of project development](https://classroom.udacity.com/nanodegrees/nd013/parts/6047fe34-d93c-4f50-8336-b70ef10cb4b2 "System Integration Project Lesson 4. Project Overview") suggested in the classroom.
 Communication was through a group Slack channel.
