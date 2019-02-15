@@ -21,11 +21,9 @@ This is the final proposal for ...
 
 1. Building the Team
 2. Project Description
-3. Utilized Machines and Installations
-3. Choice of Methods and Strategies
-4. Bottlenecks
-5. Final Draft
-6. Directions for Use
+3. Stages of Project Construction
+4. Real World Testing
+5. Directions for Use
 
 -------------
 
@@ -62,7 +60,7 @@ We actually had to downgrade the systems we were using to make sure the code wil
 The KITT Github repository can be found [here](https://github.com/fwa785/CarND-Capstone.git).
 
 
-### Choice of Methods, Installations and Strategies
+##### Choice of Methods, Installations and Strategies
 
 Tensorflow API for Object Detection
 Models tried:
@@ -77,7 +75,7 @@ Classification Buildup:
 	* GPU, no GPU
 
 
-### Bottlenecks
+##### Bottlenecks
 
 Acquisition of good annotated data
 Classifier Environment Setup
@@ -89,6 +87,11 @@ Meeting Carla requirements
 ### Real World Testing
 
 Final inference graph
+
+
+### Directions For Use
+
+* Be sure that your workstation is running Ubuntu 16.04 Xenial Xerus or Ubuntu 14.04 Trusty Tahir. [Ubuntu downloads can be found here](https://www.ubuntu.com/download/desktop).
 
 
 ---------------------------
