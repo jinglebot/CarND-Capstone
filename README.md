@@ -19,12 +19,12 @@
 
 This is the final proposal for ...
 
-1.) Building the Team
-2.) Project Description
-3.) Utilized Machines and Installations
-3.) Choice of Methods and Strategies
-4.) Bottlenecks
-5.) Final Draft
+1. Building the Team
+2. Project Description
+3. Utilized Machines and Installations
+3. Choice of Methods and Strategies
+4. Bottlenecks
+5. Final Draft
 
 -------------
 
@@ -46,12 +46,12 @@ Data was also shared via the FTP server. Work was done in phases as
 
 The team used [__Google's Tensorflow Object Detection API__](https://github.com/tensorflow/models/blob/master/research/object_detection) for its code framework and have tested on multiple models before arriving at their final choice: the [**Single Shot MultiBox Detector with the Inception Neural Network v2 trained on the Coco dataset 2018 01 28**](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
 
-Training was done on two separate annotated datasets taken online. The first dataset contains simulator images that was fed to the model to create the first inference graph for running the classifier in the simulator. The second dataset contains real-life images mixed with Carla ROS bag images for running on Carla.
+Training was done on two separate annotated datasets taken online. The first dataset contains simulator images that was fed to the model to create the first inference graph for running the classifier in the simulator. The training took *2,970 steps*. The second dataset contains real-life images mixed with Carla ROS bag images for running on Carla and it took *3,900 steps*. 
 
 
 ### Stages of Project Construction
 
-To complete the tasks on time, the KITT team has followed a schedule.
+To complete the tasks on time, the KITT team has followed a schedule as well as the [order of project development](https://classroom.udacity.com/nanodegrees/nd013/parts/6047fe34-d93c-4f50-8336-b70ef10cb4b2 "System Integration Project Lesson 4. Project Overview") suggested in the classroom.
 Communication was through a group Slack channel.
 One team member's PC acted as a server to hold the huge data files necessary for training the models which cannot be loaded in Github since it imposes a 50MB file size limitation.
 We actually had to downgrade the systems we were using to make sure the code will run on Carla.
