@@ -4,7 +4,7 @@
 # [Final Capstone Project: Programming a Real Self-Driving Car](https://github.com/fwa785/CarND-Capstone.git)
 
 #### presented by:
-## Team Knight Riders' KITT
+### Team Knight Riders' KITT
 
 
 #### * Feng Wang -- fwa785@gmail.com
