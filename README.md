@@ -4,14 +4,14 @@
 # [Final Capstone Project: Programming a Real Self-Driving Car](https://github.com/fwa785/CarND-Capstone.git)
 
 #### presented by:
-## Team Knight Riders' KITT
+# Team Knight Riders' KITT
 
 
-##### * Feng Wang -- fwa785@gmail.com
-##### * Maria Cristina An -- jingle1216@yahoo.com
-##### * Carlos Barredo -- ccbaes@yahoo.es
-##### * Stavros Dimopoulos -- sdim@sdim.gr
-##### * Venkata Ramesh Gudapati -- venkataramesh@gmail.com
+#### * Feng Wang -- fwa785@gmail.com
+#### * Maria Cristina An -- jingle1216@yahoo.com
+#### * Carlos Barredo -- ccbaes@yahoo.es
+#### * Stavros Dimopoulos -- sdim@sdim.gr
+#### * Venkata Ramesh Gudapati -- venkataramesh@gmail.com
 
 
 ### Project Overview
