@@ -81,8 +81,8 @@ To complete the tasks on time, the KITT team has followed a schedule as well as 
 
 * Building the classifier was the last difficulty for the team. Trial and error were done every step of the way. The buildup phases were as follows:
 	* classifying red light, no red light using sim images
-	* classifying with the state/colors
-	* overcoming the car's sluggish motion with the color addition 
+	* classifying according to state/colors
+	* overcoming the car's sluggish motion with the addition of color classifier
 	* classifying with real-life images
 	* overcoming latency
 	* downgrading to meet Carla requirements
