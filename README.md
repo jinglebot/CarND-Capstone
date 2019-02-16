@@ -95,7 +95,7 @@ The final draft now runs on Tensorflow-GPU 1.3 with CUDA 8.0 with two inference 
 
 * Follow instructions to build the workstation, install ROS and the _unity_ simulator from the [Udacity repository](https://github.com/udacity/CarND-Capstone.git)
 * Download code from [this repository](https://github.com/fwa785/CarND-Capstone.git).
-* Download inference graphs from the [ftp server](ftps://carnd:addas_engrs_2019@CarND.sdim.gr).
+* Download inference graphs from the ftp server (ftps://carnd:addas_engrs_2019@CarND.sdim.gr).
 * Run the simulator.
 
 The End
