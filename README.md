@@ -77,7 +77,7 @@ To complete the tasks on time, the KITT team has followed a schedule as well as 
 * Acquisition of good annotated data was done online, both for the sim images and the site images.
 
 * A major hurdle for everyone was in setting up the environment for the project. A significant proportion of the time was spent on getting the project to run in the one environment, only to change to another because of high latency or non-workable errors. Some team members actually had to downgrade the systems they were using to meet the code requirements for Carla.
-  and  
+
 
 * Building the classifier was the last difficulty for the team. Trial and error were done every step of the way. The buildup phases were as follows:
 	* classifying red light, no red light using sim images
