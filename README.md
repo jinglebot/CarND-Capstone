@@ -45,7 +45,7 @@ The tasks for the project were divided by nodes except for the classifier where 
 
 The goal of the project is to write a code that will drive the car around a road track in a simulation after which the same code will be applied to drive a real car **Carla** around a real-life track. 
 The project's code was structured using ROS packages wrapped in a Catkin workspace, written in Python and C++.
-The team members have the option to choose which environment to install and work their project on: Docker, AWS, VM and the Udacity Workspace were the preferred containers. Data was also shared via the FTP server. Work was done in phases as described as discussed below.
+The team members have the option to choose which environment to install and work their project on: Docker, AWS, VM and the Udacity Workspace were the preferred containers. Data was also shared via the FTP server. Work was done in phases as described below.
 
 
 #### Classifier
