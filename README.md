@@ -17,7 +17,7 @@
 
 ### Project Overview
 
-This is the final project requirement summarized into the following phases: 
+This final project is submitted in fulfillment of the requirements for the Self-Driving Car Engineer Nanodegree Program. It is summarized into the following phases: 
 
 1. Building the Team
 2. Project Description
