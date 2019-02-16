@@ -21,9 +21,8 @@ This is the final project requirement summarized into the following phases:
 
 1. Building the Team
 2. Project Description
-3. Stages of Project Construction
-4. Real World Testing
-5. Directions for Use
+3. Project Construction
+4. Directions for Use
 
 -------------
 
@@ -50,14 +49,12 @@ The team used [__Google's Tensorflow Object Detection API__](https://github.com/
 Training was done on two separate annotated datasets taken online. The first dataset contains simulator images that was fed to the model to create the first inference graph for running the classifier in the simulator. The training took *2,970 steps*. The second dataset contains real-life images mixed with Carla ROS bag images for running on Carla and it took *3,900 steps*. One team member's PC acted as a server to hold the huge data files necessary for training the models which cannot be loaded in Github since it imposes a 50MB file size limitation. 
 
 
-### Stages of Project Construction
+### Project Construction
 
 ##### Timeline
 
 To complete the tasks on time, the KITT team has followed a schedule as well as the [order of project development](https://classroom.udacity.com/nanodegrees/nd013/parts/6047fe34-d93c-4f50-8336-b70ef10cb4b2 "System Integration Project Lesson 4. Project Overview") suggested in the classroom.
 
-
-##### Choice of Methods, Installations and Strategies
 ##### Bottlenecks
 
 * The first issue faced by the team was on which model to use for the project. *Speed* versus *accuracy* were the usual factors considered. Nevertheless, *latency* became a major determinant since the car would not run because of it. The models that were tried on were the Faster RCNN, SSD Resnet and SSD Inception. The latter became the best choice for its low computational overhead.
@@ -67,103 +64,21 @@ To complete the tasks on time, the KITT team has followed a schedule as well as 
 * A major hurdle for everyone was in setting up the environment for the project. A significant proportion of the time was spent on getting the project to run in the one environment, only to change to another because of high latency or non-workable errors. Some team members actually had to downgrade the systems they were using to meet the code requirements for Carla.
   and  
 
-* Building the classifier was the last 
-Classification Buildup:
-	* red light, no red light
-	* addition of color
-	* sluggishness with the color addition 
-	* moving to real-life ROS bag images
-	* GPU, no GPU
+* Building the classifier was the last difficulty for the team. Trial and error were done every step of the way. The buildup phases were as follows:
+	* classifying red light, no red light using sim images
+	* classifying with the state/colors
+	* overcoming the car's sluggish motion with the color addition 
+	* classifying with real-life images
+	* overcoming latency
+	* downgrading to meet Carla requirements
 
-
-
-
-
-Classifier Trial and Error
-
-
-
-### Real World Testing
-
-Final inference graph
-
+The final draft now runs on Tensorflow-GPU 1.3 with CUDA 8.0 with two inference graphs for running in both the simulator and Carla's system.
 
 ### Directions For Use
 
-* Be sure that your workstation is running Ubuntu 16.04 Xenial Xerus or Ubuntu 14.04 Trusty Tahir. [Ubuntu downloads can be found here](https://www.ubuntu.com/download/desktop).
+* Follow instructions to build the workstation, install ROS and the _unity_ simulator from the [Udacity repository](https://github.com/udacity/CarND-Capstone.git)
+* Download code from [this repository](https://github.com/fwa785/CarND-Capstone.git).
+* Download inference graphs from the [ftp server](ftps://carnd:addas_engrs_2019@CarND.sdim.gr).
+* Run the simulator.
 
-
----------------------------
-
-Please use **one** of the two installation options, either native **or** docker installation.
-
-### Native Installation
-
-* Be sure that your workstation is running Ubuntu 16.04 Xenial Xerus or Ubuntu 14.04 Trusty Tahir. [Ubuntu downloads can be found here](https://www.ubuntu.com/download/desktop).
-* If using a Virtual Machine to install Ubuntu, use the following configuration as minimum:
-  * 2 CPU
-  * 2 GB system memory
-  * 25 GB of free hard drive space
-
-  The Udacity provided virtual machine has ROS and Dataspeed DBW already installed, so you can skip the next two steps if you are using this.
-
-* Follow these instructions to install ROS
-  * [ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu) if you have Ubuntu 16.04.
-  * [ROS Indigo](http://wiki.ros.org/indigo/Installation/Ubuntu) if you have Ubuntu 14.04.
-* [Dataspeed DBW](https://bitbucket.org/DataspeedInc/dbw_mkz_ros)
-  * Use this option to install the SDK on a workstation that already has ROS installed: [One Line SDK Install (binary)](https://bitbucket.org/DataspeedInc/dbw_mkz_ros/src/81e63fcc335d7b64139d7482017d6a97b405e250/ROS_SETUP.md?fileviewer=file-view-default)
-* Download the [Udacity Simulator](https://github.com/udacity/CarND-Capstone/releases).
-
-### Docker Installation
-[Install Docker](https://docs.docker.com/engine/installation/)
-
-Build the docker container
-```bash
-docker build . -t capstone
-```
-
-Run the docker file
-```bash
-docker run -p 4567:4567 -v $PWD:/capstone -v /tmp/log:/root/.ros/ --rm -it capstone
-```
-
-### Port Forwarding
-To set up port forwarding, please refer to the [instructions from term 2](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/16cf4a78-4fc7-49e1-8621-3450ca938b77)
-
-### Usage
-
-1. Clone the project repository
-```bash
-git clone https://github.com/udacity/CarND-Capstone.git
-```
-
-2. Install python dependencies
-```bash
-cd CarND-Capstone
-pip install -r requirements.txt
-```
-3. Make and run styx
-```bash
-cd ros
-catkin_make
-source devel/setup.sh
-roslaunch launch/styx.launch
-```
-4. Run the simulator
-
-### Real world testing
-1. Download [training bag](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic_light_bag_file.zip) that was recorded on the Udacity self-driving car.
-2. Unzip the file
-```bash
-unzip traffic_light_bag_file.zip
-```
-3. Play the bag file
-```bash
-rosbag play -l traffic_light_bag_file/traffic_light_training.bag
-```
-4. Launch your project in site mode
-```bash
-cd CarND-Capstone/ros
-roslaunch launch/site.launch
-```
-5. Confirm that traffic light detection works on real life images
+The End
