@@ -56,7 +56,10 @@ The team used [__Google's Tensorflow Object Detection API__](https://github.com/
 #### Training
 
 
-Training was done on two separate annotated datasets taken online. The first dataset contains simulator images that was fed to the model to create the first inference graph for running the classifier in the simulator. The training took *2,970 steps*. The second dataset contains real-life images mixed with Carla ROS bag images for running on Carla and it took *3,900 steps*. One team member's PC acted as a server to hold the huge data files necessary for training the models which cannot be loaded in Github since it imposes a 50MB file size limitation. 
+Training was done on two separate annotated datasets taken online. The first dataset contains simulator images 
+that was fed to the model to create the first inference graph for running the classifier in the simulator. The training 
+took *2,970 steps*. The second dataset contains real-life images mixed with Carla ROS bag images for running on Carla 
+and it took *3,900 steps*. The final frozen graph of the model can be found [here](https://drive.google.com/open?id=1FERKyNAq_J4phr7LbAKs_s4EH5-K7GTU)
 
 
 ### Project Construction
@@ -73,7 +76,9 @@ To complete the tasks on time, the KITT team has followed a schedule as well as 
 
 * The first issue faced by the team was on which model to use for the project. *Speed* versus *accuracy* were the usual factors considered. Nevertheless, *latency* became a major determinant since the car would not run because of it. The models that were tried on were the Faster RCNN, SSD Resnet and SSD Inception. The latter became the best choice for its low computational overhead.
 
-* Acquisition of good annotated data was done online, both for the sim images and the site images.
+* The traffic light images for simulator and real life were extracted from rosbag file captured for both simulator and
+the real life site images. The images were labeled by [LabelImg](https://tzutalin.github.io/labelImg/). Some annotated 
+data was found online to add on to the training data, both for the sim images and the site images.
 
 * A major hurdle for everyone was in setting up the environment for the project. A significant proportion of the time was spent on getting the project to run in the one environment, only to change to another because of high latency or non-workable errors. Some team members actually had to downgrade the systems they were using to meet the code requirements for Carla.
 
@@ -90,23 +95,6 @@ The final draft now runs on Tensorflow-GPU 1.3 with CUDA 8.0 with two inference 
 
 
 ### Directions For Use
-
-
-* Follow instructions to build the workstation, install ROS and the _unity_ simulator from the [Udacity repository](https://github.com/udacity/CarND-Capstone.git)
-* Download code from [this repository](https://github.com/fwa785/CarND-Capstone.git).
-* Download inference graphs from the ftp server (ftps://carnd:addas_engrs_2019@CarND.sdim.gr).
-* Run the simulator.
-
-The End
-=======
-This is the project repo for the final project of the Udacity Self-Driving Car Nanodegree: Programming a Real Self-Driving Car. For more information about the project, see the project introduction [here](https://classroom.udacity.com/nanodegrees/nd013/parts/6047fe34-d93c-4f50-8336-b70ef10cb4b2/modules/e1a23b06-329a-4684-a717-ad476f0d8dff/lessons/462c933d-9f24-42d3-8bdc-a08a5fc866e4/concepts/5ab4b122-83e6-436d-850f-9f4d26627fd9).
-
-## Team
-* Feng Wang -- fwa785@gmail.com
-* Maria Cristina An -- jingle1216@yahoo.com
-* Carlos Barredo -- ccbaes@yahoo.es
-* Stavros Dimopoulos -- sdim@sdim.gr
-* Venkata Ramesh Gudapati -- venkataramesh@gmail.com
 
 Please use **one** of the two installation options, either native **or** docker installation.
 
@@ -151,7 +139,7 @@ git clone https://github.com/fwa785/CarND-Capstone.git
 ```
 
 2. Copy the frozen graph files
-Get the frozen graph files from gdrive location https://drive.google.com/open?id=1FERKyNAq_J4phr7LbAKs_s4EH5-K7GTU,
+Get the frozen graph files from [gdrive location](https://drive.google.com/open?id=1FERKyNAq_J4phr7LbAKs_s4EH5-K7GTU),
 and copy the files to ros/src/tl_detector directory
 
 3. Install python dependencies
