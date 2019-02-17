@@ -91,23 +91,6 @@ The final draft now runs on Tensorflow-GPU 1.3 with CUDA 8.0 with two inference 
 
 ### Directions For Use
 
-
-* Follow instructions to build the workstation, install ROS and the _unity_ simulator from the [Udacity repository](https://github.com/udacity/CarND-Capstone.git)
-* Download code from [this repository](https://github.com/fwa785/CarND-Capstone.git).
-* Download inference graphs from the ftp server (ftps://carnd:addas_engrs_2019@CarND.sdim.gr).
-* Run the simulator.
-
-The End
-=======
-This is the project repo for the final project of the Udacity Self-Driving Car Nanodegree: Programming a Real Self-Driving Car. For more information about the project, see the project introduction [here](https://classroom.udacity.com/nanodegrees/nd013/parts/6047fe34-d93c-4f50-8336-b70ef10cb4b2/modules/e1a23b06-329a-4684-a717-ad476f0d8dff/lessons/462c933d-9f24-42d3-8bdc-a08a5fc866e4/concepts/5ab4b122-83e6-436d-850f-9f4d26627fd9).
-
-## Team
-* Feng Wang -- fwa785@gmail.com
-* Maria Cristina An -- jingle1216@yahoo.com
-* Carlos Barredo -- ccbaes@yahoo.es
-* Stavros Dimopoulos -- sdim@sdim.gr
-* Venkata Ramesh Gudapati -- venkataramesh@gmail.com
-
 Please use **one** of the two installation options, either native **or** docker installation.
 
 ### Native Installation
