@@ -73,7 +73,7 @@ To complete the tasks on time, the KITT team has followed a schedule as well as 
 
 * The first issue faced by the team was on which model to use for the project. *Speed* versus *accuracy* were the usual factors considered. Nevertheless, *latency* became a major determinant since the car would not run because of it. The models that were tried on were the Faster RCNN, SSD Resnet and SSD Inception. The latter became the best choice for its low computational overhead.
 
-* Acquisition of good annotated data was done online, both for the sim images and the site images.
+* The traffic light images for simulator and real life were extracted from rosbag file captured for both simulator and the real life site images. The images were labeled by [LabelImg](https://tzutalin.github.io/labelImg/). Some annotated data was found online to add on to the training data, both for the sim images and the site images.
 
 * A major hurdle for everyone was in setting up the environment for the project. A significant proportion of the time was spent on getting the project to run in the one environment, only to change to another because of high latency or non-workable errors. Some team members actually had to downgrade the systems they were using to meet the code requirements for Carla.
 
